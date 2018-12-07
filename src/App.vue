@@ -2,11 +2,18 @@
     <div class="appContainer">
         <h1>hello app</h1>
         <button @click="updateFlag">点击我</button>
-        <life-test v-show="show"></life-test>
-        <life-test2 v-show="!show"></life-test2>
-        <!--<router-link to="/a">go lifetest</router-link>-->
-        <!--<router-link to="/b">go lifetest2</router-link>-->
+        <!--<life-test v-show="show"></life-test>-->
+        <!--<life-test2 v-show="!show"></life-test2>-->
+        <router-link to="/b">go b</router-link>
+        <router-link to="/c">go c</router-link>
         <!--<router-view></router-view>-->
+        <!--<keep-alive>-->
+            <!--<router-view v-if="$route.meta.keepAlive"></router-view>-->
+        <!--</keep-alive>-->
+        <!--<router-view v-if="!$route.meta.keepAlive"></router-view>-->
+        <keep-alive include="a">
+            <router-view></router-view>
+        </keep-alive>
     </div>
 </template>
 <script>

@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --inline --host localhost --config webpack.config.js"
+    "serve": "webpack-dev-server --inline --host localhost --config webpack.config.js",
+    "bulid": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
